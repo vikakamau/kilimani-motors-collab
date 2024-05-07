@@ -1,69 +1,54 @@
+import { Link } from "react-router-dom";
+
+
+
 function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" >
-            Navbar
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <h1 className="text-bold text-primary m-2">Kilimani Motors Limited</h1>
+
+          <div className="collapse navbar-collapse " id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <div className="m-2">
+                <li className="nav-item">
+                  <Link to="/">
+                    <h3>
+                      Home
+                    </h3>
+                  </Link>
+                </li>
+                
+              </div>
+              <div className="m-2">
+              
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" >
-                  Home
-                </a>
+                <Link to="/about">
+                <h3 >
+                  About Us
+                </h3>
+                </Link>
               </li>
+              </div>
+              <div className="m-2">
               <li className="nav-item">
-                <a className="nav-link" >
-                  Link
-                </a>
+                <Link to="/available">
+                  <h3>
+                      List of available Cars
+                  </h3>
+                  </Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul className="dropdown-menu">
-                  <li>
-                    <a className="dropdown-item" >
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" >
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" >
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </li>
+              </div>
+              <div className="m-2">
               <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">
-                  Disabled
-                </a>
+                <Link to="/contacts">
+                  <h3>
+                    Contact Us
+                  </h3>
+                </Link>
               </li>
+              </div>
             </ul>
             <form className="d-flex" role="search">
               <input
