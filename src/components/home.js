@@ -4,7 +4,9 @@ import { useEffect, useState } from "react"
 function Home(){
   const [pic,setpic] = useState([])
   useEffect(()=>{
-    fetch("http://localhost:3000/information")
+ 
+
+    fetch("https://api-server-vik-2.onrender.com/information")
    .then(res=>res.json())
    .then(data=>{
       setpic(data)

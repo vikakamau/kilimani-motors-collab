@@ -7,26 +7,31 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './components/about us';
 import Listcars from './components/listcar';
 import Contact from './components/contact us';
+import Describe from './components/desscribe';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/kilimani-motors-collab",
     element: <App />
   },
   {
-    path: "/about",
+    path: "/kilimani-motors-collab/about",
     element: < About/>
 
   },
   {
-    path: "/available",
+    path: "/kilimani-motors-collab/available",
     element: <Listcars/>
 
   },
   {
-    path: "/contacts",
+    path: "/kilimani-motors-collab/contacts",
     element: <Contact/>
+
+  },  {
+    path: "/kilimani-motors-collab/describe/:id",
+    element: <Describe/>
 
   }
 ])

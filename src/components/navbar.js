@@ -13,7 +13,7 @@ function Navbar() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <div className="m-2">
                 <li className="nav-item">
-                  <Link to="/">
+                  <Link to="/kilimani-motors-collab">
                     <h3>
                       Home
                     </h3>
@@ -24,7 +24,7 @@ function Navbar() {
               <div className="m-2">
               
               <li className="nav-item">
-                <Link to="/about">
+                <Link to="/kilimani-motors-collab/about">
                 <h3 >
                   About Us
                 </h3>
@@ -33,7 +33,7 @@ function Navbar() {
               </div>
               <div className="m-2">
               <li className="nav-item">
-                <Link to="/available">
+                <Link to="/kilimani-motors-collab/available">
                   <h3>
                       List of available Cars
                   </h3>
@@ -42,7 +42,7 @@ function Navbar() {
               </div>
               <div className="m-2">
               <li className="nav-item">
-                <Link to="/contacts">
+                <Link to="/kilimani-motors-collab/contacts">
                   <h3>
                     Contact Us
                   </h3>
