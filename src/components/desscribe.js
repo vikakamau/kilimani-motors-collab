@@ -64,7 +64,7 @@ useEffect(()=>{
                         <h3 >Email Us</h3>
                     </header>
                     <a href="vikakamau04@gmail.com" className="text-white">
-                        <span>vikakamau04@gmail.Com</span>
+                        <span>KilimaniMotors@gmail.Com</span>
                     </a>
                 </div>
                 <div class="col-md-4">
