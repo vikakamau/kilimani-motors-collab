@@ -34,7 +34,7 @@ useEffect(()=>{
                 <h5 className="card-title">Name: {l.Brand}</h5>
                 <p className="card-text">Model: {l.Model}</p>
 
-                <Link to={`/describe/${l.id}`}>
+                <Link to={`/kilimani-motors-collab/describe/${l.id}`}>
                 <button className="btn btn-success btn-sm m-3" >View Car Details</button>
                 </Link>
               </div>

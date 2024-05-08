@@ -12,25 +12,25 @@ import Describe from './components/desscribe';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/kilimani-motors-collab",
     element: <App />
   },
   {
-    path: "/about",
+    path: "/kilimani-motors-collab/about",
     element: < About/>
 
   },
   {
-    path: "/available",
+    path: "/kilimani-motors-collab/available",
     element: <Listcars/>
 
   },
   {
-    path: "/contacts",
+    path: "/kilimani-motors-collab/contacts",
     element: <Contact/>
 
   },  {
-    path: "/describe/:id",
+    path: "/kilimani-motors-collab/describe/:id",
     element: <Describe/>
 
   }

@@ -37,10 +37,10 @@ useEffect(()=>{
                 <p className="card-text">Color: {description.Color}</p>
                 <p className="card-text">Price: {description.Price}</p>
                 <p className="card-text ">Description: {description.description}</p>
-                <Link to="/contacts">
+                <Link to="/kilimani-motors-collab/contacts">
                 <button className="btn btn-secondary btn-sm m-3" >Request A Car</button>
                 </Link>
-                <Link to="/available">
+                <Link to="/kilimani-motors-collab/available">
                 <button className="btn btn-danger btn-sm m-3" >Go Back</button>
                 </Link>
                 
