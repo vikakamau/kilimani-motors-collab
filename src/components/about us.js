@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from "react";
 import Navbar from "./navbar";
 
@@ -65,6 +66,14 @@ function About() {
             We do not fiddle with the odometer for any reason as we allow you to
             choose the mileage you are comfortable with based on your budget.
           </p>
+
+import Navbar from "./navbar"
+
+function About(){
+    return (
+        <div>
+            <Navbar/>
+            <h1>About Us</h1>
         </div>
       </div>
       </div>
