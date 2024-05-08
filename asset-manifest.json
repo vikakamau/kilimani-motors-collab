@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kilimani-motors-collab/static/css/main.d070eabf.css",
+    "main.js": "/kilimani-motors-collab/static/js/main.dafd1f58.js",
+    "static/js/453.c739e8bb.chunk.js": "/kilimani-motors-collab/static/js/453.c739e8bb.chunk.js",
+    "index.html": "/kilimani-motors-collab/index.html",
+    "main.d070eabf.css.map": "/kilimani-motors-collab/static/css/main.d070eabf.css.map",
+    "main.dafd1f58.js.map": "/kilimani-motors-collab/static/js/main.dafd1f58.js.map",
+    "453.c739e8bb.chunk.js.map": "/kilimani-motors-collab/static/js/453.c739e8bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d070eabf.css",
+    "static/js/main.dafd1f58.js"
+  ]
+}
