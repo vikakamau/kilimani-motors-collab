@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 const [list, setList]= useState([])
 
 useEffect(()=>{
-  fetch("http://localhost:3000/cars")
+  fetch("https://api-server-vik-2.onrender.com/cars")
   .then(res=>res.json())
   .then(data =>{
     setList(data)

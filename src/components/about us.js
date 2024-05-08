@@ -6,7 +6,7 @@ function About() {
   let [about, setAbout] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/information")
+    fetch("https://api-server-vik-2.onrender.com/information")
       .then((res) => res.json())
       .then((data) => {
         setAbout(data);
@@ -21,10 +21,10 @@ function About() {
         <div>
       {about.map((abt) => (
         <div>
-          {" "}
+          
           <img src={abt.homepage} alt="about" style={{ width: "1890px" }} />
           <h2 className="text-center">About Us</h2>
-          <p> {abt.about}</p>{" "}
+          <p> {abt.about}</p>
         </div>
       ))}
       <div className="row bg-white" style={{ height: "60vh" }}>

@@ -7,7 +7,7 @@ const{id}= useParams()
 
 
 useEffect(()=>{
-    fetch(`http://localhost:3000/cars/${id}`)
+    fetch(`https://api-server-vik-2.onrender.com/cars/${id}`)
     .then(res=> res.json())
     .then(data=>{
         setDescription(data)

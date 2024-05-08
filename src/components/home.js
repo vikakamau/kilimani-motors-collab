@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 function Home(){
   const [pic,setpic] = useState([])
   useEffect(()=>{
-    fetch("http://localhost:3000/cars")
+    fetch("https://api-server-vik-2.onrender.com/information")
    .then(res=>res.json())
    .then(data=>{
       setpic(data)
@@ -17,10 +17,8 @@ function Home(){
     <h1 className="text-center">Welcome To Kilimani Motors Ltd</h1>
     
    {pic.map((img)=>(
-    <div key={img.id}>
-       
-     <img src= {img.homepage}className=""alt="" style={{ width: '1890px' }}/>
-     </div>
+     <img src={img.homepage} className="" alt="" style={{ width: '1890px' }}/>
+
    ))}
      
         </div>
