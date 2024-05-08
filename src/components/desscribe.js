@@ -24,10 +24,10 @@ useEffect(()=>{
               
                 <img
                   src={description.image}
-                  className="card-img-top"
+                  className="card-img-top img-fluid"
                   alt="Cars"
 
-                  style={{  height :"680px"}}
+                  style={{ height: "370px", objectFit: "cover" }}
                 />
             
               <div className="card-body">
