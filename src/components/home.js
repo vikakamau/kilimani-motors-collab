@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 
 
+
 function Home(){
   const [pic,setpic] = useState([])
   useEffect(()=>{
@@ -16,14 +17,15 @@ function Home(){
 
     return (
         <div>
-    <h1 className="text-center">Welcome To Kilimani Motors Ltd</h1>
+    <h1 className="text-center bg-warning fw-bold">Welcome To Kilimani Motors Ltd.</h1>
+  
     
    {pic.map((img)=>(
-     <img src={img.homepage} className="" alt="" style={{ width: '1890px' }}/>
+     <img src={img.homepage} className="" alt="" style={{ width: '1350px',height:'800px', objectFit:"cover" }}/>
 
    ))}
-   <div class="row bg-primary" >
-                <div class="col-md-4">
+   <div className="row bg-warning" >
+                <div className="col-md-4">
                     <header>
                         <h3 id="call">Call Us</h3>
                     </header>
@@ -31,14 +33,9 @@ function Home(){
                     <a className="text-white" href="0705237806">
                         <span>0705237806</span>
                     </a>
-                    <header>
-                        <h3 >Email Us</h3>
-                    </header>
-                    <a href="vikakamau04@gmail.com" className="text-white">
-                        <span>KilimaniMotors@gmail.Com</span>
-                    </a>
+                    
                 </div>
-                <div class="col-md-4">
+                <div className="col-md-4 text-right" >
                     <header>
                         <h3>Business Hours</h3>
                     </header>
@@ -46,7 +43,15 @@ function Home(){
                     <h5 id="num">Saturday: 9:00am to 5:00pm</h5>
                     <h5 id="num">Sorry We are Closed On Sunday</h5>
                 </div>
+               <div className="col-md-4">
+               <header>
+                        <h3 >Email Us</h3>
+                    </header>
+                    <a href="vikakamau04@gmail.com" className="text-white">
+                        <span>KilimaniMotors@gmail.Com</span>
+                    </a>
 
+               </div>
             </div>
      
         </div>
