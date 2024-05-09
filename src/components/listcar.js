@@ -4,7 +4,22 @@ import { Link } from "react-router-dom"
 
   function Listcars(){
 const [list, setList]= useState([])
+const [search, setSearch] = useState("")
 
+const handleSearch = (e) => {
+setSearch(e.target.value)
+}
+
+const filter = list.filter((l)=>{
+
+  if (search.length > 0) {
+    return l.Brand.toLowerCase().includes(search.toLowerCase()) || l.Model.toLowerCase().includes(search.toLowerCase())
+  }
+  else {
+    return true;
+  }
+
+})
 useEffect(()=>{
   fetch("https://api-server-vik-2.onrender.com/cars")
   .then(res=>res.json())
@@ -17,9 +32,14 @@ useEffect(()=>{
    <div>
     <Navbar/>
       <div className="container m-3 p-3">
+
+      <div className="m-2 p-3">
+            <input onChange={handleSearch} className="form-control" type="text" placeholder="Search Car by Model Or Name" value={search}/>
+        </div>
       <div className="row">
-        {list.map((l) => (
-          <div key={l.id} className="col-sm-3 mb-2 mx-auto">
+        {filter.map((l) => (
+          <div key={l.id} className="col-sm-4 mb-3 mx-auto">
+
             <div className="card">
               
                 <img
@@ -27,7 +47,7 @@ useEffect(()=>{
                   className="card-img-top"
                   alt="Cars"
 
-                  style={{  height :"480px"}}
+                  style={{ height: "350px", objectFit: "cover" }}
                 />
             
               <div className="card-body">
