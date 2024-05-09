@@ -21,7 +21,7 @@ function Home(){
   
     
    {pic.map((img)=>(
-     <img src={img.homepage} className="" alt="" style={{ width: '1350px',height:'800px', objectFit:"cover" }}/>
+     <img src={img.homepage} className="" alt="" style={{ width: "1890px", height:"900px",objectFit: "cover" }}/>
 
    ))}
    <div className="row bg-warning" >

@@ -31,7 +31,7 @@ function Navbar() {
 
               <div className="m-5 ">
                 <li className="nav-item ">
-                  <Link to="/about">
+                  <Link to="/kilimani-motors-collab/about">
                     <h4>About</h4>
                   </Link>
                 </li>

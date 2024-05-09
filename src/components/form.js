@@ -19,7 +19,7 @@ function Data(){
   <p><strong>Address:</strong> {d.address}</p>
   <p><strong>Contact Information:</strong> {d.contacts}</p>
   <p><strong>Interested Car Brand:</strong> {d.interestedCarBrand}</p>
-     <Link to="/contacts">
+     <Link to="/kilimani-motors-collab/contacts">
                 <button className="btn btn-danger btn-sm m-3" >Go Back</button>
                 </Link>
   </div>
