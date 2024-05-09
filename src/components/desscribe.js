@@ -7,7 +7,7 @@ const{id}= useParams()
 
 
 useEffect(()=>{
-    fetch(`http://localhost:3000/cars/${id}`)
+    fetch(`https://api-server-vik-2.onrender.com/cars/${id}`)
     .then(res=> res.json())
     .then(data=>{
         setDescription(data)
@@ -37,10 +37,10 @@ useEffect(()=>{
                 <p className="card-text">Color: {description.Color}</p>
                 <p className="card-text">Price: {description.Price}</p>
                 <p className="card-text ">Description: {description.description}</p>
-                <Link to="/contacts">
+                <Link to="/kilimani-motors-collab/contacts">
                 <button className="btn btn-secondary btn-sm m-3" >Request A Car</button>
                 </Link>
-                <Link to="/available">
+                <Link to="/kilimani-motors-collab/available">
                 <button className="btn btn-danger btn-sm m-3" >Go Back</button>
                 </Link>
                 
@@ -64,6 +64,7 @@ useEffect(()=>{
                         <h3 >Email Us</h3>
                     </header>
                     <a href="vikakamau04@gmail.com" className="text-white">
+
                         <span>kilimaniMotors@gmail.Com</span>
                     </a>
                 </div>
