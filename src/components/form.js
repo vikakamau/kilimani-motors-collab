@@ -4,7 +4,7 @@ function Data(){
     const [data ,setData]= useState([])
 
     useEffect(()=>{
-        fetch("http://localhost:3000/form")
+        fetch("https://api-server-vik-2.onrender.com/form")
         .then(res =>res.json())
         .then(data => setData(data))
     }, [])

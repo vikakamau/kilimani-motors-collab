@@ -21,7 +21,7 @@ function ContactUs() {
     e.preventDefault();
     alert(`your form has been submitted successfully
     Thankyou for choosing Kilimani Motors Our Team will reach out to you shortly ASANTE SANA`)
-    fetch('http://localhost:3000/form', {
+    fetch('https://api-server-vik-2.onrender.com/form', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
