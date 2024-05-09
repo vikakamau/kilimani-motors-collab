@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react"
 import Navbar from "./navbar"
-  
+import { Link } from "react-router-dom"
+
   function Listcars(){
 const [list, setList]= useState([])
 const [search, setSearch] = useState("")
@@ -20,7 +21,7 @@ const filter = list.filter((l)=>{
 
 })
 useEffect(()=>{
-  fetch("http://localhost:4000/cars")
+  fetch("https://api-server-vik-2.onrender.com/cars")
   .then(res=>res.json())
   .then(data =>{
     setList(data)
@@ -28,17 +29,17 @@ useEffect(()=>{
 },[])
 
     return(
-<div>
-<Navbar />
-
-
+   <div>
+    <Navbar/>
       <div className="container m-3 p-3">
+
       <div className="m-2 p-3">
             <input onChange={handleSearch} className="form-control" type="text" placeholder="Search Car by Model Or Name" value={search}/>
         </div>
       <div className="row">
         {filter.map((l) => (
           <div key={l.id} className="col-sm-4 mb-3 mx-auto">
+
             <div className="card">
               
                 <img
@@ -52,10 +53,10 @@ useEffect(()=>{
               <div className="card-body">
                 <h5 className="card-title">Name: {l.Brand}</h5>
                 <p className="card-text">Model: {l.Model}</p>
-                
-                <button className="btn btn-success btn-sm m-3" >View Car Details
-                </button>
 
+                <Link to={`/kilimani-motors-collab/describe/${l.id}`}>
+                <button className="btn btn-success btn-sm m-3" >View Car Details</button>
+                </Link>
               </div>
             </div>
           </div>

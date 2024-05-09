@@ -2,66 +2,56 @@ import { Link } from "react-router-dom";
 
 
 
+
 function Navbar() {
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
-          <h1 className="text-bold text-primary m-2">Kilimani Motors Limited</h1>
 
-          <div className="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <div className="m-2">
-                <li className="nav-item">
-                  <Link to="/">
-                    <h3>
-                      Home
-                    </h3>
+      <nav className="navbar navbar-expand-lg bg-dark navbar-dark m-3 ">
+        <div className="container-fluid">
+          <h1 className="text-bold text-primary m-2">
+          <img src={"https://i.pinimg.com/564x/0a/e7/16/0ae7168109df3688316c8bfd361ccbfb.jpg"} width="200" height="150" className="d-inline-block align-top" alt="Kilimani Motors"></img>
+            
+          </h1>
+
+          <div
+            className="collapse navbar-collapse justify-content-center "
+            id="navbarSupportedContent"
+          >
+            <ul className="navbar-nav mx-auto">
+              <div className=" m-5">
+                <li className="nav-item " >
+                  <Link to="/kilimani-motors-collab">
+                    <h4>Home</h4>
+
                   </Link>
                 </li>
                 
               </div>
-              <div className="m-2">
-              
-              <li className="nav-item">
-                <Link to="/about">
-                <h3 >
-                  About Us
-                </h3>
-                </Link>
-              </li>
+
+              <div className="m-5 ">
+                <li className="nav-item ">
+                  <Link to="/about">
+                    <h4>About</h4>
+                  </Link>
+                </li>
               </div>
-              <div className="m-2">
-              <li className="nav-item">
-                <Link to="/available">
-                  <h3>
-                      List of available Cars
-                  </h3>
+              <div className="m-5">
+                <li className="nav-item">
+                  <Link to="/kilimani-motors-collab/available">
+                    <h4>Cars</h4>
                   </Link>
               </li>
               </div>
-              <div className="m-2">
-              <li className="nav-item">
-                <Link to="/contacts">
-                  <h3>
-                    Contact Us
-                  </h3>
-                </Link>
-              </li>
+
+              <div className="m-5">
+                <li className="nav-item">
+                  <Link to="/kilimani-motors-collab/contacts">
+                    <h4>Contact Us</h4>
+                  </Link>
+                </li>
               </div>
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search By Name or Model"
-                aria-label="Search"
-              
-              />
-              <button className="btn btn-outline-success" type="submit" >
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>
