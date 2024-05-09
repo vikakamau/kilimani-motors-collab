@@ -54,10 +54,11 @@ function Navbar() {
               <input
                 className="form-control me-2"
                 type="search"
-                placeholder="Search"
+                placeholder="Search By Name or Model"
                 aria-label="Search"
+              
               />
-              <button className="btn btn-outline-success" type="submit">
+              <button className="btn btn-outline-success" type="submit" >
                 Search
               </button>
             </form>

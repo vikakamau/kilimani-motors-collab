@@ -3,6 +3,22 @@ import Navbar from "./navbar"
   
   function Listcars(){
 const [list, setList]= useState([])
+const [search, setSearch] = useState("")
+
+const handleSearch = (e) => {
+setSearch(e.target.value)
+}
+
+const filter = list.filter((l)=>{
+
+  if (search.length > 0) {
+    return l.Brand.toLowerCase().includes(search.toLowerCase()) || l.Model.toLowerCase().includes(search.toLowerCase())
+  }
+  else {
+    return true;
+  }
+
+})
 useEffect(()=>{
   fetch("http://localhost:4000/cars")
   .then(res=>res.json())
@@ -17,9 +33,11 @@ useEffect(()=>{
 
 
       <div className="container m-3 p-3">
-      
+      <div className="m-2 p-3">
+            <input onChange={handleSearch} className="form-control" type="text" placeholder="Search Car by Model Or Name" value={search}/>
+        </div>
       <div className="row">
-        {list.map((l) => (
+        {filter.map((l) => (
           <div key={l.id} className="col-sm-4 mb-3 mx-auto">
             <div className="card">
               
@@ -28,7 +46,7 @@ useEffect(()=>{
                   className="card-img-top"
                   alt="Cars"
 
-                  style={{  height :"480px"}}
+                  style={{ height: "350px", objectFit: "cover" }}
                 />
             
               <div className="card-body">
