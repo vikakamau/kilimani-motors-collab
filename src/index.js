@@ -8,6 +8,7 @@ import About from './components/about us';
 import Listcars from './components/listcar';
 import Contact from './components/contact us';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
     element: <Contact/>
 
   }
+  
 ])
 
 
