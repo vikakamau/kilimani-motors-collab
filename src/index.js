@@ -8,7 +8,7 @@ import About from './components/about us';
 import Listcars from './components/listcar';
 import Contact from './components/contact us';
 import Describe from './components/desscribe';
-
+import Data from './components/form';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
@@ -29,10 +29,15 @@ const router = createBrowserRouter([
   {
     path: "/kilimani-motors-collab/contacts",
     element: <Contact/>
-
-  },  {
+  },  
+  {
     path: "/kilimani-motors-collab/describe/:id",
     element: <Describe/>
+
+  },
+  {
+    path: "/data",
+    element: <Data/>
 
   }
   
