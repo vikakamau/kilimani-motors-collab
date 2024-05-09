@@ -3,57 +3,47 @@ import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <div>
-      <nav classNameName="navbar navbar-expand-lg bg-body-tertiary">
-        <div classNameName="container-fluid">
-          <h1 classNameName="text-bold text-primary m-2">
-            Kilimani Motors Limited
+      <nav className="navbar navbar-expand-lg bg-dark navbar-dark m-3 ">
+        <div className="container-fluid">
+          <h1 className="text-bold text-primary m-2">
+          <img src={"https://i.pinimg.com/564x/0a/e7/16/0ae7168109df3688316c8bfd361ccbfb.jpg"} width="200" height="150" className="d-inline-block align-top" alt="Kilimani Motors"></img>
+            
           </h1>
 
           <div
-            classNameName="collapse navbar-collapse "
+            className="collapse navbar-collapse justify-content-center "
             id="navbarSupportedContent"
           >
-            <ul classNameName="navbar-nav me-auto mb-2 mb-lg-0">
-              <div classNameName="m-2">
-                <li classNameName="nav-item">
+            <ul className="navbar-nav mx-auto">
+              <div className=" m-5">
+                <li className="nav-item " >
                   <Link to="/">
-                    <h3>Home</h3>
+                    <h4>Home</h4>
                   </Link>
                 </li>
               </div>
-              <div classNameName="m-2">
-                <li classNameName="nav-item">
+              <div className="m-5 ">
+                <li className="nav-item ">
                   <Link to="/about">
-                    <h3>About Us</h3>
+                    <h4>About</h4>
                   </Link>
                 </li>
               </div>
-              <div classNameName="m-2">
-                <li classNameName="nav-item">
+              <div className="m-5">
+                <li className="nav-item">
                   <Link to="/available">
-                    <h3>List of available Cars</h3>
+                    <h4>Cars</h4>
                   </Link>
                 </li>
               </div>
-              <div classNameName="m-2">
-                <li classNameName="nav-item">
+              <div className="m-5">
+                <li className="nav-item">
                   <Link to="/contacts">
-                    <h3>Contact Us</h3>
+                    <h4>Contact Us</h4>
                   </Link>
                 </li>
               </div>
             </ul>
-            <form classNameName="d-flex" role="search">
-              <input
-                classNameName="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button classNameName="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>

@@ -5,7 +5,7 @@ function About() {
   let [about, setAbout] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3001/information")
+    fetch("http://localhost:3000/information")
       .then((res) => res.json())
       .then((data) => {
         setAbout(data);
@@ -20,15 +20,15 @@ function About() {
         <div>
       {about.map((abt) => (
         <div>
-          {" "}
-          <img src={abt.homepage} alt="about" style={{ width: "1890px" }} />
+          <img src={abt.homepage} alt="about" style={{ width: "1890px", height:"1000px",objectFit: "cover" }} />
           <h2 className="text-center">About Us</h2>
-          <p> {abt.about}</p>{" "}
+          <p> {abt.about}</p> 
+          
         </div>
       ))}
       <div className="row bg-white" style={{ height: "60vh" }}>
         <div className="col-md-6">
-          <img src={"https://i.pinimg.com/564x/39/03/aa/3903aa74a47ef2bafffa55feb43331e8.jpg"} style={{ height: "540px", width: "900px" }}  alt="Image"/>
+          <img src={"https://i.pinimg.com/564x/39/03/aa/3903aa74a47ef2bafffa55feb43331e8.jpg"} style={{ height: "540px", width: "900px" ,objectFit: "cover"}}  alt=""/>
         </div>
         <div className="col-md-6">
           <header>
