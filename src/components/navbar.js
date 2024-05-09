@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 
+
+
+
 function Navbar() {
   return (
     <div>
+
       <nav className="navbar navbar-expand-lg bg-dark navbar-dark m-3 ">
         <div className="container-fluid">
           <h1 className="text-bold text-primary m-2">
@@ -17,11 +21,14 @@ function Navbar() {
             <ul className="navbar-nav mx-auto">
               <div className=" m-5">
                 <li className="nav-item " >
-                  <Link to="/">
+                  <Link to="/kilimani-motors-collab">
                     <h4>Home</h4>
+
                   </Link>
                 </li>
+                
               </div>
+
               <div className="m-5 ">
                 <li className="nav-item ">
                   <Link to="/about">
@@ -31,14 +38,15 @@ function Navbar() {
               </div>
               <div className="m-5">
                 <li className="nav-item">
-                  <Link to="/available">
+                  <Link to="/kilimani-motors-collab/available">
                     <h4>Cars</h4>
                   </Link>
-                </li>
+              </li>
               </div>
+
               <div className="m-5">
                 <li className="nav-item">
-                  <Link to="/contacts">
+                  <Link to="/kilimani-motors-collab/contacts">
                     <h4>Contact Us</h4>
                   </Link>
                 </li>
