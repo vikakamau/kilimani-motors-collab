@@ -1,12 +1,12 @@
 import Navbar from "./navbar"
-function Contact(){
 
-    return(
+function About(){
+    return (
         <div>
             <Navbar/>
-            <h1>Contact</h1>
+            <h1>About Us</h1>
         </div>
     )
 }
 
-export default Contact
+export default About

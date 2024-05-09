@@ -3,11 +3,41 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import About from './components/about us';
+import Listcars from './components/listcar';
+import Contact from './components/contact us';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />
+  },
+  {
+    path: "/about",
+    element: < About/>
+
+  },
+  {
+    path: "/available",
+    element: <Listcars/>
+
+  },
+  {
+    path: "/contacts",
+    element: <Contact/>
+
+  }
+  
+])
+
+
+
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
