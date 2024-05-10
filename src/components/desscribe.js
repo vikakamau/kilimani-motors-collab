@@ -27,7 +27,7 @@ useEffect(()=>{
                   className="card-img-top img-fluid"
                   alt="Cars"
 
-                  style={{ height: "370px", objectFit: "cover" }}
+                  style={{ height: "370px", width: "410px", objectFit: "cover" }}
                 />
             
               <div className="card-body">
