@@ -17,14 +17,14 @@ function Home(){
 
     return (
         <div>
-    <h1 className="text-center bg-warning fw-bold">Welcome To Kilimani Motors Ltd.</h1>
+    <h1 className="text-center bg-secondary text-light fw-bold">Welcome To Kilimani Motors Ltd.</h1>
   
     
    {pic.map((img)=>(
      <img src={img.homepage} className="" alt="" style={{ width: "1890px", height:"900px",objectFit: "cover" }}/>
 
    ))}
-   <div className="row bg-warning" >
+   <div className="row bg-secondary m-3" >
                 <div className="col-md-4">
                     <header>
                         <h3 id="call">Call Us</h3>

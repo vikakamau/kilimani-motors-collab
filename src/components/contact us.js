@@ -43,9 +43,9 @@ function ContactUs() {
   return (
     <div>
         <Navbar/>
-        <div className="row bg-white m-3" style={{ height: "58vh" }}>
+        <div className="row bg-white m-3" style={{ height: "65vh" }}>
         
-              <div className="col-md-6 bg-warning">
+              <div className="col-md-6 bg-light">
                   <header>
               <h2>OUR WEBSITE</h2>
                  </header>
