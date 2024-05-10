@@ -1,6 +1,9 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "./navbar";
-import { Link } from "react-router-dom";
+
+import {useState, useEffect} from "react"
+import Navbar from "./navbar"
+import { Link } from "react-router-dom"
+
+
 
 function Listcars() {
   const [list, setList] = useState([]);
@@ -24,6 +27,7 @@ function Listcars() {
       });
       setFilteredList(filteredList);
     };
+
 
     const delaySearch = setTimeout(() => {
       filterList();
@@ -70,6 +74,8 @@ function Listcars() {
                     <button className="btn btn-success btn-sm m-3">View Car Details</button>
                   </Link>
                 </div>
+            
+             
               </div>
             </div>
           ))}
